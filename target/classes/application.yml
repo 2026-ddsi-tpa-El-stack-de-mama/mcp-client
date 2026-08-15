@@ -1,0 +1,26 @@
+spring:
+  main:
+    web-application-type: none
+  ai:
+    mcp:
+      client:
+        type: SYNC
+        streamable-http:
+          connections:
+            stack-de-mama:
+              url: ${MCP_SERVER_URL}
+              headers:
+                Authorization: "Bearer ${MCP_SERVER_BEARER_TOKEN}"
+    anthropic:
+      api-key: ${ANTHROPIC_API_KEY}
+      chat:
+        options:
+          model: ${ANTHROPIC_MODEL:claude-sonnet-5}
+
+app:
+  telegram:
+    mcp-server:
+      bearer-token: ${MCP_SERVER_BEARER_TOKEN}
+    telegram:
+      bot-token: ${TELEGRAM_BOT_TOKEN}
+      bot-username: ${TELEGRAM_BOT_USERNAME:Grupo8_DSI_bot}

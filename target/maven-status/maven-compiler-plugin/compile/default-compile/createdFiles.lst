@@ -1,0 +1,6 @@
+org\example\mcpclient\config\TelegramClientProperties$McpServer.class
+org\example\mcpclient\config\ChatClientConfig.class
+org\example\mcpclient\config\TelegramClientProperties$Telegram.class
+org\example\mcpclient\TelegramBot.class
+org\example\mcpclient\TelegramBotApplication.class
+org\example\mcpclient\config\TelegramClientProperties.class
